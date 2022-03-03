@@ -1,0 +1,20 @@
+<configuration status="info">
+    <rootLogger>
+        appenderRef.rolloing.ref = LogToFile
+    </rootLogger>
+    <Appenders>
+        <File name="fout" fileName="okp.log" append="true">
+            <PatternLayout>
+                <Pattern>"%d{yyyy-MM-dd HH:mm:ss} %p %m%n"</Pattern>
+            </PatternLayout>
+        </File>
+    </Appenders>
+
+
+
+    <Loggers>
+        <Root level="info">
+            <Appenderref ref="fout"/>
+        </Root>
+    </Loggers>
+</configuration>
